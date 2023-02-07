@@ -1,0 +1,169 @@
+/* ---- ESTILOS GENERALES ---- */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ---- VARIABLES DE LOS COLORES ---- */
+
+:root {
+  --color-background: #242933;
+  --color-background-form: #2f3644;
+  --color-border-form: #363c4f;
+  --color-font-title: #acbae1;
+  --color-button: #6c63ff;
+  --color-button-hover: #554cff;
+  --color-white:white;
+  --color-error:red;
+}
+
+/* ---- FORMULARIO ---- */
+
+.container {
+  /* border: 3px solid red;  */
+  max-width: 80%;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.form {
+  padding: 20px 50px;
+  border: 3px solid #363c4f;
+  max-width: 500px;
+  margin: auto;
+  margin-top: 10px;
+  background-color: var(--color-background-form);
+}
+
+.title-form {
+  font-weight: bold;
+  font-size: 30px;
+  color: var(--color-font-title);
+  text-align: left;
+}
+
+.form-group {
+  margin-bottom: 30px;
+}
+
+.form-group label {
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+  font-size: 20px;
+  color: var(--color-font-title);
+}
+
+.form-group input {
+  margin-top: 15px;
+  width: 100%;
+  border-radius: 5px;
+  padding: 15px;
+  font-size: 15px;
+  outline: none;
+}
+
+.form-button button {
+  font-weight: bold;
+  margin: auto;
+  font-size: 19px;
+  padding: 20px;
+  width: 100%;
+  color: var(--color-white);
+  letter-spacing: 1px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-button);
+  border-radius: 5px;
+}
+
+
+.form-group-input {
+	position: relative;
+  display: flex;
+}
+
+/* ---- error message js ----*/
+.error-message {
+    color: var(--color-error);
+    margin-top: 0px;
+}
+
+
+.form-input-error {
+  font-size: 15px;
+  margin-bottom: 0;
+  color: red;
+  display: none;
+}
+
+.form-input-error-active {
+  display: block;
+  margin-top: 15px;
+}
+
+.validation-form-state{
+  position: absolute;
+  right: 10px;
+  bottom: 15px;
+  z-index: 100;
+   opacity: 0; 
+}
+
+.form-message-correct{
+  display: block;
+}
+
+.form-group-input-correct .validation-form-state{
+  color: green;
+  opacity: 1;
+}
+
+.form-group-input-correct .form-input{
+  border: 3px solid rgb(17, 224, 17);
+
+}
+
+.form-group-input-incorrect .validation-form-state{
+  color: red;
+  opacity: 1;
+}
+
+.form-group-input-incorrect .form-input{
+  border: 3px solid red;
+
+}
+
+/* ICONS */
+.errorIcon {
+  background-image: url(images/error-icon.svg);
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 10px;
+  z-index: 100;
+  background-size: 20px;
+}
+
+.successIcon {
+  background-image: url('images/success-icon.svg');
+  background-repeat: no-repeat;
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  padding: 10px;
+  z-index: 100;
+  background-size: 20px;
+}
+
+
+.borderColor {
+  background-color: #4b44d1;
+  border-color: aliceblue;
+}
